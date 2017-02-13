@@ -4,8 +4,9 @@ import time
 
 def bar(i, m, j):
 	parser = './ltlf2ws1s '
-	filename = '../benchmarks/case_'+str(i)+'_'+str(m)+'_50/'+str(j)+'.ltlf'
-	partfile = '../benchmarks/case_'+str(i)+'_'+str(m)+'_50/'+str(j)+'.part'
+	path = '../../Benchmark/Scalability/benchmark/case_'
+	filename = path+str(i)+'_'+str(m)+'_50/'+str(j)+'.ltlf'
+	partfile = path+str(i)+'_'+str(m)+'_50/'+str(j)+'.part'
 	tmp = ' >tmp.mona'
 	exe = './mona -w -q tmp.mona >tmp.out'
 	syn = './bddexplicit tmp.dfa '

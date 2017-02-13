@@ -4,7 +4,7 @@ import time
 
 def bar(i, m, j):
 	parser = './ltlf2ws1s '
-	path = '../../Benchmark/Scalability/benchmark/case_'
+	path = '../../../Benchmark/Scalability/benchmark/case_'
 	filename = path+str(i)+'_'+str(m)+'_50/'+str(j)+'.ltlf'
 	tmp = ' >tmp_dfa.mona'
 	exe = './mona -w -q tmp_dfa.mona '

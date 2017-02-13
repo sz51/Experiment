@@ -4,8 +4,9 @@ import time
 
 def bar(i, j):
 	parser = './ltlf2ws1s '
-	filename = '../acacia/'+str(i)+'.ltlf'
-	partfile = '../acacia/'+str(i)+'.part'
+	path = '../../Benchmark/Synthesis/acacia/'
+	filename = path+str(i)+'.ltlf'
+	partfile = path+str(i)+'.part'
 	tmp = ' >tmp.mona'
 	exe = './mona -w -q tmp.mona >tmp.out'
 	syn = './bdd2 tmp.dfa '
