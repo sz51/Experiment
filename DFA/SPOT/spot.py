@@ -3,8 +3,8 @@ import multiprocessing
 import time
 
 def bar(i, m, j):
-	parser = '../../spot-2.2.2/bin/ltlfilt --from-ltlf -F '
-	filename = '../benchmarks/case_'+str(i)+'_'+str(m)+'_50/'+str(j)+'.ltlf'
+	parser = '../../../spot-2.2.2/bin/ltlfilt --from-ltlf -F '
+	filename = '../../../Benchmark/Scalability/case_'+str(i)+'_'+str(m)+'_50/'+str(j)+'.ltlf'
 	exe = ' | ltl2tgba -D'
 	directory = "../output_spot/case_"+str(i)+"_"+str(m)+"_50"
 	if not os.path.exists(directory):
